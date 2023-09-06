@@ -1,0 +1,24 @@
+.mainHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 1rem;
+}
+
+.navLeft {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.navRight {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navRight ul{
+    display: flex;
+    gap: 1rem;
+}
