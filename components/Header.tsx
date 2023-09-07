@@ -1,4 +1,4 @@
-'use client'
+'use-client'
 
 import Image from 'next/image'
 import lightLogo from '../public/light-logo.svg'
@@ -40,12 +40,12 @@ const Header = () => {
                 <ul>
                     <li>About</li>
                     <li>Login</li>
-                    <button className={theme === 'light' ? styles.lightButton : styles.darkButton} onClick={() => changeTheme()}>
+                    <button className={styles.themeButton} onClick={() => changeTheme()}>
                         <Image
                             src={theme === 'light' ? darkMode : lightMode}
                             alt="lift leaderboard logo"
-                            height={48}
-                            width={48}
+                            height={32}
+                            width={32}
                         />
                     </button>
                 </ul>

@@ -1,8 +1,13 @@
+.pageContainer {
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
   padding: 10rem 1rem;
   gap: 3rem;
 }
@@ -18,4 +23,9 @@
   background-color:  rgb(126, 101, 81);
   color: rgb(197, 213, 228);
   box-shadow: 0 0 2px rgb(147, 133, 129);
+}
+
+[data-theme='dark'] .getStartedButton {
+  background-color: rgb(147, 133, 129);
+  color: rgb(197, 213, 228);
 }

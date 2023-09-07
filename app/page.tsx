@@ -1,11 +1,12 @@
-'user client'
+'use client'
+
 import styles from './page.module.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.pageContainer}>
       <Header />
       <main className={styles.main}>
         <h1>Track your top lifts, all in one place. 💪</h1>
