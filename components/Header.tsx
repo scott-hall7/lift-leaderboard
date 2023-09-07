@@ -1,4 +1,4 @@
-'use-client'
+'use client'
 
 import Image from 'next/image'
 import lightLogo from '../public/light-logo.svg'
@@ -6,12 +6,13 @@ import darkLogo from '../public/dark-logo.svg'
 import lightMode from '../public/light_mode.svg'
 import darkMode from '../public/dark_mode.svg'
 import styles from './header.module.css'
+
 import { useTheme } from 'next-themes'
 import { useState, useEffect } from 'react'
 
 const Header = () => {
-    const { theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false)
+    const { theme, setTheme } = useTheme()
 
     useEffect(() => {
         setMounted(true)
