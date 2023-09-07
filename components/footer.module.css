@@ -5,3 +5,8 @@
     background-color: rgb(70, 99, 98);
     color: rgb(197, 213, 228);
 }
+
+[data-theme='dark'] .footer {
+    background-color: rgb(197, 213, 228);
+    color: rgb(70, 99, 98);
+}

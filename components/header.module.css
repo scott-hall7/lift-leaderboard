@@ -18,7 +18,27 @@
     justify-content: space-evenly;
 }
 
-.navRight ul{
+.navRight ul {
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 3rem;
+}
+
+.lightButton {
+    border: none;
+    border-radius: 50px;
+    color: white;
+
+    padding: .25rem;
+
+    background-color: rgb(70, 99, 98);
+}
+
+.darkButton {
+    border: none;
+    border-radius: 50px;
+
+    padding: .25rem;
+    background-color: rgb(197, 213, 228);
 }
