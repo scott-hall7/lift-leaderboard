@@ -9,7 +9,6 @@
 .navLeft {
     display: flex;
     align-items: center;
-
     gap: 1rem;
 }
 
@@ -21,8 +20,21 @@
 .navRight ul {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
     gap: 3rem;
+
+    font-size: 1.5rem;
+}
+
+.loginLink {
+    border-radius: 10px;
+    padding: .5rem .75rem;
+
+    color: rgb(197, 213, 228);
+    background-color: rgb(136, 150, 171);
+}
+
+.loginLink:hover {
+    transform: scale(1.2);
 }
 
 .themeButton {
@@ -31,7 +43,6 @@
     
     border: none;
     border-radius: 50px;
-
     padding: .25rem;
 
     background-color: rgb(70, 99, 98);
@@ -41,3 +52,9 @@
     background-color: rgb(197, 213, 228);
 }
 
+@media (max-width: 700px) {
+    .mainHeader {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

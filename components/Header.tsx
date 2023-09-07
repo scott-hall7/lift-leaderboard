@@ -6,6 +6,7 @@ import darkLogo from '../public/dark-logo.svg'
 import lightMode from '../public/light_mode.svg'
 import darkMode from '../public/dark_mode.svg'
 import styles from './header.module.css'
+import Link from 'next/link'
 
 import { useTheme } from 'next-themes'
 import { useState, useEffect } from 'react'
@@ -39,8 +40,12 @@ const Header = () => {
             </div>
             <nav className={styles.navRight}>
                 <ul>
-                    <li>About</li>
-                    <li>Login</li>
+                    <li>
+                        <Link href="/about">About</Link>
+                    </li>
+                    <li>
+                        <Link href="/login" className={styles.loginLink}>Log in</Link>
+                    </li>
                     <button className={styles.themeButton} onClick={() => changeTheme()}>
                         <Image
                             src={theme === 'light' ? darkMode : lightMode}
