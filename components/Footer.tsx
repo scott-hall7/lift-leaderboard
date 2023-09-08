@@ -5,7 +5,10 @@ const Footer = () => {
         <footer className={styles.footer}>
             <ul>
                 <li>About</li>
-                <li>Login</li>
+                <li>Log in</li>
+            </ul>
+            <ul>
+                <li>create by scott-hall7</li>
             </ul>
         </footer>
     )

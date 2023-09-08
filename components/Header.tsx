@@ -36,7 +36,7 @@ const Header = () => {
                     height={100}
                     width={100}
                 />
-                <h2>Lift<br/>Leaderboard</h2>
+                <Link href="/"><h2>Lift<br/>Leaderboard</h2></Link>
             </div>
             <nav className={styles.navRight}>
                 <ul>

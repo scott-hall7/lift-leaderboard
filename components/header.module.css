@@ -30,12 +30,18 @@
     padding: .5rem .75rem;
 
     color: rgb(197, 213, 228);
-    background-color: rgb(136, 150, 171);
+    background-color: rgb(70, 99, 98);
 }
 
 .loginLink:hover {
     transform: scale(1.2);
 }
+
+[data-theme='dark'] .loginLink {
+    background-color: rgb(197, 213, 228);
+    color: rgb(70, 99, 98);
+}
+
 
 .themeButton {
     display: flex;
@@ -47,6 +53,8 @@
 
     background-color: rgb(70, 99, 98);
 }
+
+
 
 [data-theme='dark'] .themeButton {
     background-color: rgb(197, 213, 228);
