@@ -13,7 +13,7 @@ import { useState, useEffect } from 'react'
 
 const Header = () => {
     const [mounted, setMounted] = useState(false)
-    const { theme, setTheme } = useTheme()
+    const {theme, setTheme} = useTheme()
 
     useEffect(() => {
         setMounted(true)
@@ -29,20 +29,18 @@ const Header = () => {
 
     return (
         <header className={styles.mainHeader}>
-            <div className={styles.navLeft}>
+            <Link href="/" className={styles.navLeft}>
                 <Image
                     src={theme === 'light' ? lightLogo : darkLogo}
                     alt="lift leaderboard logo"
                     height={100}
                     width={100}
+                    className={styles.logo}
                 />
-                <Link href="/"><h2>Lift<br/>Leaderboard</h2></Link>
-            </div>
+                <h2>Lift<br/>Leaderboard</h2>
+            </Link>
             <nav className={styles.navRight}>
                 <ul>
-                    <li>
-                        <Link href="/about">About</Link>
-                    </li>
                     <li>
                         <Link href="/login" className={styles.loginLink}>Log in</Link>
                     </li>

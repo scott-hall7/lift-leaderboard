@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     padding: 1rem;
 }
 
@@ -20,6 +19,7 @@
 .navRight ul {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     gap: 3rem;
 
     font-size: 1.5rem;
@@ -33,15 +33,10 @@
     background-color: rgb(70, 99, 98);
 }
 
-.loginLink:hover {
-    transform: scale(1.2);
-}
-
 [data-theme='dark'] .loginLink {
     background-color: rgb(197, 213, 228);
     color: rgb(70, 99, 98);
 }
-
 
 .themeButton {
     display: flex;
@@ -54,15 +49,31 @@
     background-color: rgb(70, 99, 98);
 }
 
-
-
 [data-theme='dark'] .themeButton {
     background-color: rgb(197, 213, 228);
 }
 
 @media (max-width: 700px) {
     .mainHeader {
-        flex-direction: column;
         gap: 2rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navLeft {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navLeft h2 {
+        font-size: 1.5rem;
+    }
+
+    .navRight ul {
+        display: flex;
+        font-size: 1rem;
+        gap: 1rem;
     }
 }

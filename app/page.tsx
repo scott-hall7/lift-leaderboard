@@ -1,8 +1,7 @@
 import styles from './page.module.css'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
 
-export default function Home() {
+
+const Home = () => {
   return (
     <main className={styles.main}>
       <h1>Track your top lifts, all in one place. 💪</h1>
@@ -10,4 +9,6 @@ export default function Home() {
     </main>
   )
 }
+
+export default Home;
 
