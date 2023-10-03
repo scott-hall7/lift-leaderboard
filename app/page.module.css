@@ -1,10 +1,4 @@
-.pageContainer {
-  height: 100vh; 
-  display: flex;
-  flex-direction: column;
-}
-
-.main {
+.homePage {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,19 +6,17 @@
   gap: 3rem;
 }
 
-.getStartedButton {
+.getstartedButton {
   padding: 1rem 2rem;
-  
-  font-size: 1.5rem;
-
   border-radius: 10px;
   border: none;
+  font-size: 1.5rem;
 
   background-color:  rgb(126, 101, 81);
   color: rgb(197, 213, 228);
 }
 
-[data-theme='dark'] .getStartedButton {
+[data-theme='dark'] .getstartedButton {
   background-color: rgb(147, 133, 129);
   color: rgb(197, 213, 228);
 }

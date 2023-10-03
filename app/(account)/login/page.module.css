@@ -3,21 +3,23 @@
     flex-direction: column;
     align-items: center;
     padding: 3rem 0 4rem 0;
-
     gap: 1rem;
 }
 
 .loginForm {
     display: flex;
     flex-direction: column;
-
     width: 300px;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px w;
+    gap: 2rem;
+
     background-color: rgb(136, 150, 171);
     color: white;
-    gap: 2rem;
+}
+
+.requiredFieldText {
+    font-size: .75rem;
 }
 
 .loginDiv {
@@ -46,8 +48,4 @@
 
 .signUpText {
     text-align: center;
-}
-
-.requiredFieldText {
-    font-size: .75rem;
 }

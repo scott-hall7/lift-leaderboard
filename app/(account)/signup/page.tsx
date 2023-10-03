@@ -1,15 +1,18 @@
+import styles from './page.module.css'
 
-export default function SignUp() {
-    return (
-      <div >
-        <h1>
-            Sign up
-        </h1>
-        <form >
-          
-        </form>
-      </div>
-    )
-  }
+const SignUp = () => {
+  return (
+    <div className={styles.signupPage}>
+      <h1>
+          Sign up
+      </h1>
+      <form >
+        
+      </form>
+    </div>
+  )
+}
+
+export default SignUp;
   
   

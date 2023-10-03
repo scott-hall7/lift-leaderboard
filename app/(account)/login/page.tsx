@@ -2,7 +2,7 @@
 import styles from './page.module.css'
 import Link from 'next/link'
 
-export default function LogIn() {
+const LogIn = () => {
     return (
       <div className={styles.loginPage}>
         <h1>
@@ -35,6 +35,8 @@ export default function LogIn() {
         </form>
       </div>
     )
-  }
+}
+
+export default LogIn;
   
   
