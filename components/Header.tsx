@@ -1,5 +1,4 @@
 'use client'
-
 import Image from 'next/image'
 import lightLogo from '../public/light-logo.svg'
 import darkLogo from '../public/dark-logo.svg'
@@ -7,16 +6,28 @@ import lightMode from '../public/light_mode.svg'
 import darkMode from '../public/dark_mode.svg'
 import styles from './header.module.css'
 import Link from 'next/link'
+import LogOutButton from './Logout'
 
 import { useTheme } from 'next-themes'
 import { useState, useEffect } from 'react'
+import LogInButton from './Login'
 
 const Header = () => {
     const [mounted, setMounted] = useState(false)
     const {theme, setTheme} = useTheme()
+    const [user, setUser] = useState(false)
 
     useEffect(() => {
         setMounted(true)
+
+        async function findUser()  {
+            const { data: { user } } = await supabase.auth.getUser()
+            console.log(user)
+
+        }
+        
+
+
       }, [])
     
       if (!mounted) {
@@ -41,9 +52,8 @@ const Header = () => {
             </Link>
             <nav className={styles.navRight}>
                 <ul>
-                    <li>
-                        <Link href="/login" className={styles.loginLink}>Log in</Link>
-                    </li>
+                    <LogInButton />
+                    <LogOutButton />
                     <button className={styles.themeButton} onClick={() => changeTheme()}>
                         <Image
                             src={theme === 'light' ? darkMode : lightMode}
